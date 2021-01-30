@@ -1,0 +1,11 @@
+import webbrowser
+print("Hello i am LinkOpener, You can load and save link at this software!!")
+print("Created by Dhyanesh Ghaghada")
+link = str(input())
+webbrowser.open(link)
+x = open("Linkopenerfilesave.txt", "a")
+x.write(link + "              ")
+print("Keep An Index Of This link!!")
+y = str(input())
+x.write(y)
+x.close()
